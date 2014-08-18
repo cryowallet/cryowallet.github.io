@@ -312,7 +312,12 @@ centuries</em> to break under a massive cracking scenario.
 <td><code id="address1"></code><a href="#" target="_blank"><img src="txhist-icon2.png" alt="Transaction History" title="Transaction History" border="0"></td>
 <td><div class="well2" id="form-well2" align="center"><form name="formwallet2" method="post" action="">
   
-      <input name="nickwallet2" type="text" value="Wallet 2">
+      <input name="nickwallet2" type="text" onblur="updatenick2()";>
+	  <script>
+	  function updatenick2(){
+	  document.cookie="walletnick2=document.formwallet2.value";
+	  }
+	  </script>
       <input type="submit" name="Submit" value="Update">
     
   
