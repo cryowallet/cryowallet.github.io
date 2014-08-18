@@ -314,9 +314,9 @@ centuries</em> to break under a massive cracking scenario.
   
       <input name="nickwallet2" type="text" onblur="updatenick2()";>
 	  <script>
-	  function updatenick2(){
-	  document.cookie="walletnick2=document.formwallet2.value";
-	  }
+	   function updatenick2(form) { 
+	   setCookie("field1", formwallet2.nickwallet2.value); 
+	   return true; }
 	  </script>
       <input type="submit" name="Submit" value="Update">
     
