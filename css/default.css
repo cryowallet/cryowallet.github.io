@@ -131,6 +131,37 @@ legend {
   width: 115px;
 }
 
+#form-well2 {
+    height: 28px;
+    width: 200px;
+	margin: 0 auto;
+    padding-bottom: 0px;
+}
+
+#form-well2 input {
+    margin-bottom: 0;
+}
+
+#form-well2 input[type='text'] {
+    width: 120px;
+}
+
+#form-well2 input[type='password'] {
+    width: 100px;
+}
+
+#form-well2 .btn-success {
+  width: 115px;
+}
+
+#primary {
+    height: 28px;
+	margin: 0 auto;
+    padding-bottom: 0px;
+}
+
+
+
 #open-sesame {
   width: 90px;
 }
