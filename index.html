@@ -319,7 +319,7 @@ centuries</em> to break under a massive cracking scenario.
 	   function updatenick2() { 
 	   var today = new Date(); 
 	   var expiry = new Date(today.getTime() + 3650 * 24 * 3600 * 1000); // plus 3650 days - ten years
-	   document.cookie="walletnick2" + "=" + document.formwallet2.value + "; path=/; expires=" + expiry.toGMTString(); 
+	   document.cookie="walletnick2" + "=" + document.getElementById("formwallet2").value; + "; path=/; expires=" + expiry.toGMTString(); 
 	   }
 	  </script>
 </div></td>
