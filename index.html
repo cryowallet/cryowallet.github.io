@@ -313,21 +313,16 @@ centuries</em> to break under a massive cracking scenario.
 <td><div class="well2" id="form-well2" align="center"><form name="formwallet2" method="post" action="">
   
       <input name="nickwallet2" type="text" onblur="updatenick2()";>
-	  <script>
+	        <input type="submit" name="Submit" value="Update">
+</form>
+<script>
 	   function updatenick2() { 
 	   var today = new Date(); 
 	   var expiry = new Date(today.getTime() + 3650 * 24 * 3600 * 1000); // plus 3650 days - ten years
-	   
-	   document.cookie="walletnick2" + "=" + this.document.formwallet2.value + "; path=/; expires=" + expiry.toGMTString(); 
-	   
-	    
-	   return true; 
+	   document.cookie="walletnick2" + "=" + document.formwallet2.value + "; path=/; expires=" + expiry.toGMTString(); 
 	   }
 	  </script>
-      <input type="submit" name="Submit" value="Update">
-    
-  
-</form></div></td>
+</div></td>
 <td><div align="center"><span><strong id="balance1">&nbsp;</strong></span></div></td>
 <td><div align="center">Coming Soon</td>
 <td><div align="center"><i id="qrcode1" class="icon-qrcode"></i></div></td>
