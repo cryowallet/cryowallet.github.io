@@ -315,8 +315,15 @@ centuries</em> to break under a massive cracking scenario.
       <input name="nickwallet2" type="text" onblur="updatenick2()";>
 	  <script>
 	   function updatenick2(form) { 
+	   
+	   var today = new Date(); 
+	   var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days 
+	   function setCookie(name, value) { 
+	   document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString(); 
+	   }
 	   setCookie("field1", formwallet2.nickwallet2.value); 
-	   return true; }
+	   return true; 
+	   }
 	  </script>
       <input type="submit" name="Submit" value="Update">
     
